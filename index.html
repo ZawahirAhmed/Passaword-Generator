@@ -1,0 +1,52 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random || Password || Generator</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Password Generator</h1>
+      <div class="inputBox">
+        <input type="text" id="inputValue" disabled/>
+        <div class="iconContainer">
+          <i class="ri-eye-off-line" id="copyIcon"></i>
+        </div>
+      </div>
+        <input type="range" min="6" max="20" id="inputRange">
+        <div class="row">
+          <h4>Password Length :</h4>
+          <span id="rangeValue">20</span>
+        </div>
+        <div class="row">
+          <h5>Includes Lowercase Letter (a-z)</h6>
+          <input type="checkbox" id="lowercase" checked>
+        </div>
+        <div class="row">
+          <h5>Includes Uppercase Letter (A-Z)</h5>
+          <input type="checkbox" id="uppercase" checked>
+        </div>
+        <div class="row">
+          <h5>Includes Number Letter (0-9)</h5>
+          <input type="checkbox" id="number" checked>
+        </div>
+        <div class="row">
+          <h5>Includes Symbol Letter</h5>
+          <input type="checkbox" id="symbol" checked>
+        </div>
+        <div class="buttonBox">
+          <button id="genBtn"><h5>Generate Password</h5></button>
+        </div>
+    </div>
+
+    <!-- ########### script File ################ -->
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
